@@ -4,6 +4,7 @@
 
 
 
+
 body{
     display: flex;
 /*     background-color: rgb(133, 209, 11);
@@ -56,9 +57,7 @@ body{
     margin-bottom: 20px;
     font-weight: 400;
 }
-h3{
-    
-}
+
 
 form{
     background-color: azure;
@@ -121,6 +120,11 @@ input {
     
 }
 
+.form-group > input:invalid:focus {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.116);
+    border: 2px solid #fa2a2a;
+    
+}
 
 
 button {
@@ -137,3 +141,15 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+#repassword.notsame{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.116);
+    border: 2px solid #eeff00;
+}
+.notsame::after{
+    content: " password not same";
+    font-size: 10px;
+    color:rgb(199, 202, 33);
+}
+
+
